@@ -8,7 +8,7 @@ A arquitetura reflete essa ideia utilizando Interfaces para definir os contratos
 
 O diagrama abaixo ilustra a relação entre as interfaces e a classe concreta `IPhone`. A classe implementa os comportamentos definidos por cada interface, centralizando as funcionalidades em um único objeto.
 
-![Diagrama UML do IPhone](diagrama)
+![Diagrama UML do IPhone](img/diagrama.png)
 
 ## Estrutura dos Arquivos
 
