@@ -8,44 +8,7 @@ A arquitetura reflete essa ideia utilizando Interfaces para definir os contratos
 
 O diagrama abaixo ilustra a relação entre as interfaces e a classe concreta `IPhone`. A classe implementa os comportamentos definidos por cada interface, centralizando as funcionalidades em um único objeto.
 
-```mermaid
-classDiagram
-    direction BT
-
-    class IPhone {
-      +tocar()
-      +pausar()
-      +selecionarMusica(String musica)
-      +ligar(String numero)
-      +atender()
-      +iniciarCorreioVoz()
-      +exibirPagina(String url)
-      +adicionarNovaAba()
-      +atualizarPagina()
-    }
-
-    interface ReprodutorMusical {
-      +tocar()
-      +pausar()
-      +selecionarMusica(String musica)
-    }
-
-    interface AparelhoTelefonico {
-      +ligar(String numero)
-      +atender()
-      +iniciarCorreioVoz()
-    }
-
-    interface NavegadorInternet {
-      +exibirPagina(String url)
-      +adicionarNovaAba()
-      +atualizarPagina()
-    }
-
-    IPhone ..|> ReprodutorMusical
-    IPhone ..|> AparelhoTelefonico
-    IPhone ..|> NavegadorInternet
-```
+![Diagrama UML do IPhone](diagrama)
 
 ## Estrutura dos Arquivos
 
